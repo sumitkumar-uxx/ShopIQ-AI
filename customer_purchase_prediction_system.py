@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from lightgbm import LGBMClassifier
 import joblib
@@ -12,3 +11,4 @@ model = LGBMClassifier(random_state=42)
 model.fit(x_train,y_train)
 joblib.dump(model,"model.pkl")
 print("done")
+
