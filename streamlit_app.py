@@ -4,7 +4,7 @@ import time
 model = joblib.load("model.pkl")
 st.title("ShopIQ AI / Sumit Singh")
 age = st.number_input("Enter your Age:")
-gender = st.radio("Enter",[1,2])
+gender = st.radio("Enter Male(1) , Female(0)",[1,2])
 anumal = st.number_input("Enter the Anual Income:")
 NumberOfPurchases = st.number_input("Enter number of purchase In single Month:")
 TimeSpentOnWebsite = st.number_input("Enter TimeSpentOnWebsite(min): ")
@@ -26,4 +26,5 @@ if click:
 
 
 #cd C:\Users\sumit\OneDrive\Pictures\Documents
+
 #python -m streamlit run streamlit_app.py
